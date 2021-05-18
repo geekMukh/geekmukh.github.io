@@ -177,10 +177,10 @@ SECTION WRAPS
   font-size: 20px;
   color: white;
 }
-h2#kaamDham {
-  color: white !important;
-}
 
+#headerwrap h2 {
+  color: white;
+}
 /* Intnro Wrap */
 
 #intro {
