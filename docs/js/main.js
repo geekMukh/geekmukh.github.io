@@ -34,6 +34,17 @@ jQuery(document).ready(function ($) {
     interval: 3500,
   });
 
+  
+  const calculateTotalYear = () => {
+    dt1 = new Date();
+    dt2 = new Date("February 28, 2018 11:00:00");
+    var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+    diff /= 60 * 60 * 24;
+    return Math.abs(Math.round(diff / 365.25));
+  };
+  
+  $("#yearsOfExp").text(calculateTotalYear())
+
   // JavaScript Chart
   skillArr.forEach((el) => {
     new Chart(document.getElementById(el).getContext("2d")).Doughnut([
